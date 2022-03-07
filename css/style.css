@@ -1,1 +1,52 @@
-/* Denna fil skall innehålla din CSS kod */
+#wrapper{
+    display: grid;
+    width: 90vw;
+    border: solid 1px black;
+    min-height: 100vh;
+    margin: auto;
+    grid-template-areas: 
+    'hd hd hd'
+    's3 s3 s3'
+    'nv s1 s2'
+    's4 s4 s4'
+    'ft ft ft';
+    grid-template-rows:0.5fr 0.35fr 2fr 50px 0.25fr ;
+}
+
+header {
+    grid-area: hd;
+    background-color: blue;
+}
+
+nav {
+    grid-area: nv;
+    background-color: blueviolet;
+    border: solid white 7px;
+}
+
+#sec1 {
+    grid-area: s1;
+    background-color: cornflowerblue;
+    border: solid white 7px;
+}
+
+#sec2 {
+    grid-area: s2;
+    background-color: darkblue;
+    border: solid white 7px;
+}
+
+#sec3 {
+    grid-area: s3;
+    background-color: lightcyan;
+}
+
+#sec4 {
+    grid-area: s4;
+    background-color: deepskyblue;
+}
+
+footer {
+    grid-area: ft;
+    background-color: indigo;
+}
