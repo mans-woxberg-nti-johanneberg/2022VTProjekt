@@ -10,6 +10,7 @@
     'nv s1 s2'
     's4 s4 s4'
     'ft ft ft';
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:0.5fr 0.35fr 2fr 50px 0.25fr ;
 }
 
@@ -49,4 +50,9 @@ nav {
 footer {
     grid-area: ft;
     background-color: indigo;
+}
+
+#image1 {
+    height: 100%;
+    width: 100%;
 }
