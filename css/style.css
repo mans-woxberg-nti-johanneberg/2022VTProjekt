@@ -7,11 +7,13 @@
     grid-template-areas: 
     'hd hd hd'
     's3 s3 s3'
-    'nv s1 s2'
+    'nv nv nv'
+    's1 s1 s1'
+    's2 s2 s2'
     's4 s4 s4'
     'ft ft ft';
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:0.5fr 0.35fr 2fr 50px 0.25fr ;
+    grid-template-rows:0,5vh 0,3vh 1vh 1vh 1vh 0,25vh 0,3vh;
 }
 
 header {
@@ -55,4 +57,31 @@ footer {
 #image1 {
     height: 100%;
     width: 100%;
+    background-image: url(../img/anomaly-WWesmHEgXDs-unsplash.jpg);
+    background-size: 100%;
 }
+
+#image2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/brandon-webb-GNPCqlUex8U-unsplash.jpg);
+    background-size: 100%;
+}
+
+#image3 {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/podpros-xcQWU0Eff-U-unsplash.jpg);
+    background-size: 100%;
+}
+@media screen and (min-width:700px) {
+    #wrapper {    
+    grid-template-areas: 
+    'hd hd hd'
+    's3 s3 s3'
+    'nv s1 s2'
+    's4 s4 s4'
+    'ft ft ft';
+    grid-template-rows:0.5fr 0.35fr 2fr 50px 0.25fr ;
+        }
+    }
