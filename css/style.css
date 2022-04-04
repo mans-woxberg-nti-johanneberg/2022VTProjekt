@@ -1,7 +1,6 @@
 #wrapper{
     display: grid;
     width: 90vw;
-    border: solid 1px black;
     min-height: 100vh;
     margin: auto;
     grid-template-areas: 
@@ -18,47 +17,56 @@
 
 header {
     grid-area: hd;
-    background-color: blue;
+    background-color: white;
+    font-style: unset;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 500;
 }
 
 nav {
     grid-area: nv;
-    background-color: blueviolet;
+    background-color: white;
     border: solid white 7px;
 }
 
 #sec1 {
     grid-area: s1;
-    background-color: cornflowerblue;
+    background-color: white;
     border: solid white 7px;
 }
 
 #sec2 {
     grid-area: s2;
-    background-color: darkblue;
+    background-color: white;
     border: solid white 7px;
 }
 
 #sec3 {
     grid-area: s3;
-    background-color: lightcyan;
+    background-color: white;
+    font-style: unset;
+    font-size: 45px;
+    text-align: center;
+    font-weight: lighter;
 }
 
 #sec4 {
     grid-area: s4;
-    background-color: deepskyblue;
+    background-color: white;
 }
 
 footer {
     grid-area: ft;
-    background-color: indigo;
+    background-color: white;
 }
 
 #image1 {
     height: 100%;
     width: 100%;
     background-image: url(../img/anomaly-WWesmHEgXDs-unsplash.jpg);
-    background-size: 100%;
+    background-size:cover;
+    background-position: 50%;
 }
 
 #image2 {
@@ -93,11 +101,11 @@ footer {
     }
 
     nav {
-        display: flex;
+        /* display: flex; */
         justify-content: left;
         align-items: left;
-        height: 10vh;
-        background-color: hotpink;
+        /* height: 10vh; */
+        background-color: white;
         font-family: sans-serif;
     }
 
@@ -109,7 +117,7 @@ footer {
         left: 0px;
         height: 90vh;
         top: -90vh;
-        background-color: hotpink;
+        background-color: lightgray;
         align-items: left;
         width: 20%;
     }
